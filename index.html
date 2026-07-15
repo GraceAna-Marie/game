@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Quest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="title-container">
+      <img src="water logo.avif" alt="charity: water logo" class="title-logo">
+      <h1>Water Quest</h1>
+    </div>
+
+    <p class="game-instructions">
+      Collect 20 water cans before time runs out!
+    </p>
+
+    <div class="difficulty-container">
+      <h3>Select Difficulty</h3>
+
+      <button class="difficulty-btn" data-mode="easy">
+        Easy
+      </button>
+
+      <button class="difficulty-btn" data-mode="normal">
+        Normal
+      </button>
+
+      <button class="difficulty-btn" data-mode="hard">
+        Hard
+      </button>
+    </div>
+
+    <div class="stats">
+      <p>Cans Collected: <span id="current-cans">0</span></p>
+      <p>Time Left: <span id="timer">30</span>s</p>
+    </div>
+
+    <div id="achievements" class="achievement"></div>
+
+    <div class="game-grid"></div>
+
+    <div class="button-container">
+      <button id="start-game">Start Game</button>
+      <button id="reset-game">Reset Game</button>
+    </div>
+
+  </div>
+
+  <footer class="charity-footer">
+    <a href="https://www.charitywater.org" target="_blank">
+      charity: water Website
+    </a>
+
+    <a href="https://www.charitywater.org/donate" target="_blank">
+      Donate
+    </a>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
